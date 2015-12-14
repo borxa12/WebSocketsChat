@@ -1,0 +1,17 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>WebSocketsChat</title>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="main.js"></script>
+</head>
+<body>
+	<h1>WebSocketsChat</h1>
+	<div id='messages'></div>
+	<form onsubmit="return addMessage(this)">
+		<input type="text" id="username" placeholder="Usuario">
+		<input type="text" id="texto" placeholder="Texto">
+		<input type="submit" value="Enviar">
+	</form>
+</body>
+</html>
